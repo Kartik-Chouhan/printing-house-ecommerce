@@ -3,7 +3,6 @@ package com.printing_house_backend.category.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
 
 import com.printing_house_backend.common.BaseEntity;
 
@@ -34,5 +33,5 @@ public class Category extends BaseEntity{
     private Integer displayOrder;
 
     @Column(nullable = false)
-    private Boolean active = true;
+    private Boolean isActive = true;
 }
